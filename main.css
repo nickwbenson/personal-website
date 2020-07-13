@@ -75,6 +75,16 @@ font-weight: 800;
 	font-weight: 800;
 }
 
+#first-div {
+	margin-top: 125px; 
+	top: 0; 
+	position: fixed;
+	float: left;
+	width: 70%;
+}
+
+/* landing page */
+
 img.homepage {
 position: absolute;
 width: 75%;

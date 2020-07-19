@@ -29,7 +29,23 @@ box-sizing: border-box;
         </div>
     </div>
 
-<div style="margin-top: 100px;" id="row">
+    <p style="margin-top: 100px;"><u>proximity</u><br>
+        <input type="button" id="hideshow" value="about" style="font-size: 12px; padding-top: 1px;"></p>
+        
+        <div id="about" style="display: none;">
+        <p style="font-size: 13px;">shot throughout the first eight months of 2019, these pictures are all 
+            of my close friends (with the exeption of one stranger). every image here shows an attempt, 
+            internally, to push myself out of my photographic comfort zone.<br><br>
+            in the simplest of terms, i have never really shot people before. it has always been an invisible 
+            barrier in my photos. it's not that i have never wanted to photograph people, but that, quite honestly, 
+            i had never been brave enough to try.<br><br>
+            every photo here is shot with my grandfather's yashica mat twin lens reflex. it was the perfect gift, 
+            a camera that forces the photographer to get close to the subject. that closeness is what this 
+            project is really all about, as well as a very personal reminder of my own limitations both 
+            behind the camera and in life more generally.
+        </p></div>
+
+<div style="margin-top: 25px;" id="row">
     <div id="column">
       <a data-lightbox="proximity" href="/images/proximity1.jpg"><img src="/images/proximity1.jpg" style="width:100%"></a>
     </div>
@@ -62,6 +78,12 @@ box-sizing: border-box;
         'disableScrolling': true,
     })
 </script>
+
+<script>
+    $("#hideshow").on("click",function(){
+    $("#about").toggle("display")
+    });
+    </script>
 
 </body>
 

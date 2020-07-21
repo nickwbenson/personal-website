@@ -10,17 +10,21 @@
             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
             <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+            <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+            <script type="module" src="/node_modules/slick-carousel/slick/slick.js"></script>
         </head>
 
-        <style>
-            * {
-            box-sizing: border-box;
-            }
-            </style>
+ <style>
+      * {
+     box-sizing: border-box;
+      }
+ </style>
 
-    <script>
-    
-    </script>
+<style>
+    .slick-prev:before, .slick-next:before { 
+        color:#545454 !important;
+    }
+    </style>    
 
     <body>
 
@@ -33,19 +37,77 @@
             </div>
         </div>
 
-      <div class="app">
-        <ul class="hs">
-        <div id="playlist"><img class="playlist" src="/images/sept19.jpg"></div>
-        <div id="playlist"></div><img class="playlist" src="/images/oct19.jpg"></div>
-        <div id="playlist"></div><img class="playlist" src="/images/nov19.jpg"></div>
-        <div id="playlist"></div><img class="playlist" src="/images/dec19.jpg"></div>
-        <div id="playlist"></div><img class="playlist" src="/images/jan20.jpg"></div>
-        <div id="playlist"></div><img class="playlist" src="/images/feb20.jpg"></div>
-        <div id="playlist"></div><img class="playlist" src="/images/march20.jpg"></div>
-    </ul>
+        <div style="position: fixed; top: 100px;"><p><u>monthly playlists</u><br>
+            <input type="button" id="hideshow" value="about" style="font-size: 12px; padding-top: 1px;"></p>
+            
+            <div id="about" style="display: none;">
+            <p style="font-size: 13px;">shot throughout the first eight months of 2019, these pictures are all 
+                of my close friends (with the exeption of one stranger). every image here shows an attempt, 
+                internally, to push myself out of my photographic comfort zone.<br><br>
+                in the simplest of terms, i have never really shot people before. it has always been an invisible 
+                barrier in my photos. it's not that i have never wanted to photograph people, but that, quite honestly, 
+                i had never been brave enough to try.<br><br>
+                every photo here is shot with my grandfather's yashica mat twin lens reflex. it was the perfect gift, 
+                a camera that forces the photographer to get close to the subject. that closeness is what this 
+                project is really all about, as well as a very personal reminder of my own limitations both 
+                behind the camera and in life more generally.
+            </p></div></div>
+        
+        <div style="max-width: 80%; top: 200px;">
+        <div style="max-width: 100%;" class="slider">
+            <div><img class="playlist" src="/images/march20.jpg"></div>
+            <div><img class="playlist" src="/images/feb20.jpg"></div>
+            <div><img class="playlist" src="/images/jan20.jpg"></div>
+            <div><img class="playlist" src="/images/dec19.jpg"></div>
+            <div><img class="playlist" src="/images/nov19.jpg"></div>
+            <div><img class="playlist" src="/images/oct19.jpg"></div>
+            <div><img class="playlist" src="/images/sept19.jpg"></div>
+        </div></div>
 
-    </div> 
+        <script>
+    $(document).ready(function(){
+    $('.slider').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+  {
+      breakpoint: 1350,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+});
+        </script>
 
-    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
-
-    </body>
+<script>
+    $("#hideshow").on("click",function(){
+    $("#about").toggle("display")
+    });
+    </script>

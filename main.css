@@ -26,6 +26,8 @@ body {
 a {
 text-decoration: none;
 color: #555;
+border: none;
+outline: none;
 }
 
 #header {
@@ -74,6 +76,11 @@ font-weight: 800;
 	padding-right: 7px;
 	font-weight: 800;
 }
+
+
+#about {
+	max-width: 40%;
+  }
 
 /* landing page */
 
@@ -138,10 +145,6 @@ height: 300px;
 	width: 100%;
   }
 
-  #about {
-	max-width: 40%;
-  }
-
   #hideshow {
 	border: none;
 	outline: none;
@@ -198,12 +201,81 @@ height: 300px;
 	  margin: 0 auto;
   }
 
-/*
-  img.playlist:hover {
+  img.playlist-album {
+	max-width: 200px;
+	max-height: 200px;
+	margin: 0 auto;  
+  }
+
+  img.playlist-album:hover {
 	z-index: 3000;
 	-webkit-transform: scale(1.2);
 -ms-transform: scale(1.2);
 transform: scale(1.2);
 transition: 1s ease;
   }
-  */
+
+  .monthlyheader {
+	position: fixed; 
+	top: 100px; 
+	width: 75%;
+  }
+
+  .monthlyslider {
+	max-width: 80%; 
+	position: fixed; 
+	top: 220px;
+  }
+
+  .thirteenthheader {
+	position: fixed; 
+	top: 430px; 
+	width: 75%;
+  }
+
+  .thirteenthslider {
+	max-width: 80%; 
+	position: fixed; 
+	top: 535px;  
+  }
+
+  .musictext {
+	font-size: 12px; 
+	font-style: italic;  
+  }
+
+ /* flip mechanic from https://webdevtrick.com/css-card-flip-reflection/ */
+ 
+  .card {
+	position: relative;
+	color: white;
+	cursor: pointer;
+	transition: 1s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+  }
+  .card:hover {
+	-webkit-transform: rotateY(0.5turn);
+			transform: rotateY(0.5turn);
+  }
+  .card .item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	transition: 1s ease-in-out;
+	-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  }
+  .card .item img {
+	-o-object-fit: cover;
+	   object-fit: cover;
+  }
+  .card .back-side {
+	-webkit-transform: rotateY(0.5turn);
+			transform: rotateY(0.5turn);
+  }
+
+

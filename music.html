@@ -37,32 +37,48 @@
             </div>
         </div>
 
-        <div style="position: fixed; top: 100px;"><p><u>monthly playlists</u><br>
-            <input type="button" id="hideshow" value="about" style="font-size: 12px; padding-top: 1px;"></p>
-            
-            <div id="about" style="display: none;">
-            <p style="font-size: 13px;">shot throughout the first eight months of 2019, these pictures are all 
-                of my close friends (with the exeption of one stranger). every image here shows an attempt, 
-                internally, to push myself out of my photographic comfort zone.<br><br>
-                in the simplest of terms, i have never really shot people before. it has always been an invisible 
-                barrier in my photos. it's not that i have never wanted to photograph people, but that, quite honestly, 
-                i had never been brave enough to try.<br><br>
-                every photo here is shot with my grandfather's yashica mat twin lens reflex. it was the perfect gift, 
-                a camera that forces the photographer to get close to the subject. that closeness is what this 
-                project is really all about, as well as a very personal reminder of my own limitations both 
-                behind the camera and in life more generally.
-            </p></div></div>
+      <p class="monthlyheader"><u>monthly playlists</u><br><br>
+      <span class="musictext">every month, i have been making a 
+      playlist of my songs of the moment: both new jams and old favorites. i'm mostly trying 
+      to create little musical time capsules. i spend so much time listening to music, 
+  sometimes my library can feel like a revolving door. one second i'm obsessed, and the next 
+  it's forgotten. in an effort to fight against that, i'm hoping to look back on these in the years 
+  to come and remember songs that would otherwise be buried.</span></p>
         
-        <div style="max-width: 80%; top: 200px;">
+        <div class="monthlyslider">
         <div style="max-width: 100%;" class="slider">
-            <div><img class="playlist" src="/images/march20.jpg"></div>
+            <div class="card">
+              <div class="item front-side"><img class="playlist" src="/images/march20.jpg"></div>
+              <div class="item back-side"><img class="playlist" src="/images/feb20.jpg"></div>
+            </div>
             <div><img class="playlist" src="/images/feb20.jpg"></div>
             <div><img class="playlist" src="/images/jan20.jpg"></div>
-            <div><img class="playlist" src="/images/dec19.jpg"></div>
+            <div class="card">
+              <div class="item front-side"><img class="playlist" src="/images/dec19.jpg"></div>
+              <div class="item back-side"><img class="playlist" src="/images/dec19back.jpg"></div>
+            </div>
             <div><img class="playlist" src="/images/nov19.jpg"></div>
             <div><img class="playlist" src="/images/oct19.jpg"></div>
             <div><img class="playlist" src="/images/sept19.jpg"></div>
         </div></div>
+
+        <br><br>
+
+        <p class="thirteenthheader"><u>13th hour records</u><br><br>
+        <span class="musictext">a project now three years old, started 
+        in the summer of 2017 with my good friend marcus. it's truly a labor of love, and something 
+      that i am immensely proud of! with every release that comes and goes, we get that much better 
+    at trying to run an actual business. releases to date below.</span></p>
+
+    <div class="thirteenthslider">
+      <div style="max-width: 100%;" class="slider">
+          <div><a target="blank" href="https://13thhourrecs.com/005"><img class="playlist-album" src="/images/005_small.jpg"></a></div>
+          <div><a target="blank" href="https://13thhourrecs.com/boilermaker"><img class="playlist-album" src="/images/Boilermaker_small.jpg"></a></div>
+          <div><a target="blank" href="https://13thhourrecs.com/004"><img class="playlist-album" src="/images/004_small.jpg"></a></div>
+          <div><a target="blank" href="https://13thhourrecs.com/003"><img class="playlist-album" src="/images/003_small.jpg"></a></div>
+          <div><a target="blank" href="https://13thhourrecs.com/002"><img class="playlist-album" src="/images/002_small.jpg"></a></div>
+          <div><a target="blank" href="https://13thhourrecs.com/001"><img class="playlist-album" src="/images/001_small.jpg"></a></div>
+      </div></div>
 
         <script>
     $(document).ready(function(){
@@ -108,6 +124,9 @@
 
 <script>
     $("#hideshow").on("click",function(){
-    $("#about").toggle("display")
+    $("#about2").toggle("display")
     });
     </script>
+
+    </body>
+    </html>

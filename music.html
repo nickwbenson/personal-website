@@ -45,7 +45,7 @@
   it's forgotten. in an effort to fight against that, i'm hoping to look back on these in the years 
   to come and remember songs that would otherwise be buried.</span></p>
         
-        <div class="monthlyslider">
+        <div style="display: none;" class="monthlyslider">
         <div style="max-width: 100%;" class="slider">
             <div class="card">
               <div class="item front-side"><img class="playlist" src="/images/march20.jpg"></div>
@@ -70,7 +70,7 @@
       that i am immensely proud of! with every release that comes and goes, we get that much better 
     at trying to run an actual business. releases to date below.</span></p>
 
-    <div class="thirteenthslider">
+    <div style="display: none;" class="thirteenthslider">
       <div style="max-width: 100%;" class="slider">
           <div><a target="blank" href="https://13thhourrecs.com/005"><img class="playlist-album" src="/images/005_small.jpg"></a></div>
           <div><a target="blank" href="https://13thhourrecs.com/boilermaker"><img class="playlist-album" src="/images/Boilermaker_small.jpg"></a></div>
@@ -79,6 +79,13 @@
           <div><a target="blank" href="https://13thhourrecs.com/002"><img class="playlist-album" src="/images/002_small.jpg"></a></div>
           <div><a target="blank" href="https://13thhourrecs.com/001"><img class="playlist-album" src="/images/001_small.jpg"></a></div>
       </div></div>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $('.monthlyslider').show();
+            $('.thirteenthslider').show();
+        });
+        </script>
 
         <script>
     $(document).ready(function(){

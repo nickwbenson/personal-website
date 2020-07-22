@@ -195,6 +195,27 @@ height: 300px;
 	justify-content:center; 
   }
 
+/* progressive loading from https://www.cssscript.com/progressive-image-lazy-loading-with-blur-effect/ */
+
+  .card-image {
+	display: block;
+	min-height: 20rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+	filter: blur(3px); /* blur the lowres image */
+  }
+  
+  .card-image > img {
+	display: block;
+	width: 100%;
+	opacity: 0; /* visually hide the img element */
+  }
+  
+  .card-image.is-loaded {
+	filter: none; /* remove the blur on fullres image */
+	transition: filter 1s;
+  }
+
   @media screen and (max-width: 1100px) {
 	#column {
 	  flex: 50%;

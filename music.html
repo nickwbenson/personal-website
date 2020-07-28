@@ -12,6 +12,13 @@
             <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/>
             <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
             <script type="module" src="/node_modules/slick-carousel/slick/slick.js"></script>
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#0b0b0b">
+<meta name="theme-color" content="#313131">
       </head>
 
  <style>
@@ -26,7 +33,7 @@
     }
     </style>    
 
-    <body>
+    <body id="music-body">
 
         <div class="header-web" id="header">
             <div id="headerleft"><a href="/index">Nick Benson</a></div>
@@ -47,13 +54,16 @@
           </div>
       </div>
 
-      <p class="monthlyheader"><u>monthly playlists</u><br><br>
+      <div class="music-top">
+      <div class="monthlyheader"><div style="text-align: center;"><u>monthly playlists</u></div><br>
       <span class="musictext">every month, i have been making a 
       playlist of my songs of the moment: both new jams and old favorites. i'm mostly trying 
       to create little musical time capsules. i spend so much time listening to music, 
   sometimes my library can feel like a revolving door. one second i'm obsessed, and the next 
   it's forgotten. in an effort to fight against that, i'm hoping to look back on these in the years 
-  to come and remember songs that would otherwise be buried.</span></p>
+  to come and remember songs that would otherwise be buried.</span></div>
+</div>
+<br>
         
         <div style="min-width: 75% !important;" class="monthlyslider">
         <div style="max-width: 100%;" class="slider">
@@ -71,15 +81,20 @@
             <div><img class="playlist" src="/images/oct19.jpg"></div>
             <div><img class="playlist" src="/images/sept19.jpg"></div>
         </div></div>
+        <br>
+        <hr>
 
-        <br><br>
-
-        <p class="thirteenthheader"><u>13th hour records</u><br><br>
+        <div style="margin-bottom: 20%;">
+        <div class="thirteenthheader"><div style="text-align: center;"><u>13th hour records</u></div><br>
         <span class="musictext">a project now three years old, started 
         in the summer of 2017 with my good friend marcus. it's truly a labor of love, and something 
       that i am immensely proud of! with every release that comes and goes, we get that much better 
-    at trying to run an actual business. releases to date below.</span></p>
+    at trying to run an actual business. you can have a look at our website (clunkily hand-built 
+    by me) <a class="rainbow" target="_blank" href="https://13thhourrecs.com/"><b>right here!</b>
+    </a></span></div>
+  </div>
 
+  <!--  
     <div style="min-width: 75% !important;" class="thirteenthslider">
       <div style="max-width: 100%;" class="slider">
           <div><a target="blank" href="https://13thhourrecs.com/005"><img class="playlist-album" src="/images/005_small.jpg"></a></div>
@@ -90,6 +105,7 @@
           <div><a target="blank" href="https://13thhourrecs.com/001"><img class="playlist-album" src="/images/001_small.jpg"></a></div>
       </div></div>
 
+
 <script>
 $(window).on('load', function() {
   $('.thirteenthheader').css('display', 'none');
@@ -97,6 +113,8 @@ $(window).on('load', function() {
   $('.thirteenthheader').css('display', 'inline');
 });
 </script>
+      -->
+
 
         <script>
     $(document).ready(function(){

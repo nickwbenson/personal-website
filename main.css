@@ -107,6 +107,15 @@ font-weight: 800;
 
 #about {
 	max-width: 40%;
+	margin-top: 1em;
+  }
+
+.rainbow {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.33, #f2f), color-stop(0.66, #22f) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.33, #f2f), color-stop(0.66, #22f));
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
   }
 
   @media screen and (max-width: 625px) {
@@ -185,7 +194,6 @@ height: 300px;
 	font-style: italic;
 	background-color: white;
 	cursor: pointer;
-	min-height: 100%;
 	display:-webkit-flex;
 	display:flex;
 	-webkit-flex-direction:column;
@@ -193,6 +201,10 @@ height: 300px;
 	-webkit-align-items:center;
 	align-items:center;
 	justify-content:center; 
+  }
+
+  #fucksafari {
+	  max-height: 1em;
   }
 
 /* progressive loading from https://www.cssscript.com/progressive-image-lazy-loading-with-blur-effect/ */
@@ -248,6 +260,10 @@ height: 300px;
 	padding: 0 4px;
 }
 
+.music-top {
+	margin-top: 100px;
+}
+
   img.playlist {
 	  max-width: 200px;
 	  max-height: 200px;
@@ -268,32 +284,31 @@ transform: scale(1.2);
 transition: 1s ease;
   }
 
-  .monthlyheader {
-	position: fixed; 
-	top: 100px; 
-	width: 75%;
+  .monthlyheader { 
+	width: 50%;
+	margin-left: 25%;
   }
 
   .monthlyslider {
 	max-width: 80%; 
-	position: fixed; 
-	top: 220px;
   }
 
   .thirteenthheader { 
-	top: 430px; 
-	width: 75%;
+	width: 50%;
+	margin-left: 25%;
   }
 
   .thirteenthslider {
-	max-width: 80%; 
-	position: fixed; 
-	top: 535px;  
+	max-width: 80%;  
   }
 
   .musictext {
-	font-size: 12px; 
+	font-size: 13px; 
 	font-style: italic;  
+  }
+
+   #music-body {
+	overflow: hidden;
   }
 
  /* flip mechanic from https://webdevtrick.com/css-card-flip-reflection/ */
@@ -334,8 +349,19 @@ transition: 1s ease;
 			transform: rotateY(0.5turn);
   }
 
-  /* media instructions to resize page as needed */
+  /* media instructions */
 
+  @media screen and (max-width: 686px) {
+	#music-body {overflow: visible;}
+	}
+
+  @media screen and (max-width: 625px) {
+	.music-top {margin-top: 120px;}
+	}
+
+  /* media instructions to resize page as needed (OBSOLETE) */
+
+  /*
   @media screen and (max-width: 1306px) {
 	.monthlyslider {top: 230px;}
 	.thirteenthheader {top: 440px;}
@@ -423,4 +449,43 @@ transition: 1s ease;
 	@media screen and (max-width: 338px) {
 		.thirteenthslider {top: 740px;}
 		}
+	*/
+
+/* about page */
+
+.column {
+	width:900px;
+	position:relative;
+}
+	#left {
+	float:left;
+	clear:left;
+	width: 400px;
+}
+	#right {
+	float:right;
+	clear:right;
+	width: 400px;
+}
+
+img.about {
+	max-width:100%;
+	max-height: auto;
+}
+
+.socialmedia {
+	width: 18px;
+	height: 18px;
+}
+
+@media screen and (max-width: 985px) {
+	.column {width: 800px;}
+	}
+
+@media screen and (max-width: 860px) {
+	.column {width: 50%;}
+	#right {float: none;}
+	#left {float: none; margin-bottom: 40px;}
+
+	}
 	

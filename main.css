@@ -307,8 +307,8 @@ transition: 1s ease;
 	font-style: italic;  
   }
 
-   #music-body {
-	overflow: hidden;
+  #music-bottom {
+	  margin-bottom: 10%;
   }
 
  /* flip mechanic from https://webdevtrick.com/css-card-flip-reflection/ */
@@ -351,12 +351,12 @@ transition: 1s ease;
 
   /* media instructions */
 
-  @media screen and (max-width: 686px) {
-	#music-body {overflow: visible;}
-	}
-
   @media screen and (max-width: 625px) {
 	.music-top {margin-top: 120px;}
+	}
+
+	@media screen and (min-width: 1700px) {
+	#music-bottom {margin-bottom: 15%;}
 	}
 
   /* media instructions to resize page as needed (OBSOLETE) */
@@ -486,6 +486,6 @@ img.about {
 	.column {width: 50%;}
 	#right {float: none;}
 	#left {float: none; margin-bottom: 40px;}
-
+	#body-about {padding-bottom: 20%;}
 	}
 	

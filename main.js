@@ -27,3 +27,16 @@ function lazyLoad() {
   });
   
 }
+
+
+
+var limitFunc = function(){
+  if (window.innerWidth>686){
+     /*function for music page resize*/
+   $("music-top").css("margin-top", "0px");
+   $("music-top").css("margin-top", "100px");
+  }
+};
+
+
+

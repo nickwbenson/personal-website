@@ -148,6 +148,10 @@ img.small {
 height: 300px;
 }
 
+img.wide {
+height: 300px;
+}
+
 .photo-menu {
 	opacity: 1.0;
 }
@@ -165,6 +169,11 @@ height: 300px;
 	transition: opacity 0.4s ease;
 }
 
+.top-two {
+	padding-right: 1em; 
+	padding-bottom: 2em;
+}
+
 #caption {
 	background-color: whitesmoke;
 	padding-top: 1px;
@@ -174,6 +183,23 @@ height: 300px;
 	font-weight: 800;
 	font-style: italic;
 	font-size: 18px;
+}
+
+@media screen and (max-width: 1022px) {
+	#flex-grid {margin-top: 125px;}
+}
+
+@media screen and (max-width: 538px) {
+	#flex-grid {max-width: 300px;}
+	.top-two {padding-right: 0px;}
+	img.wide {height: auto; width: 300px;}
+}
+
+@media screen and (max-width: 325px) {
+	#flex-grid {max-width: 225px;}
+	img.small {height: auto; width: 225px;}
+	img.wide {width: 225px;}
+	#caption {font-size: 15px;}
 }
 
 /* photo project pages */
@@ -364,12 +390,17 @@ transition: 1s ease;
 
   /* media instructions */
 
+	@media screen and (min-width: 1700px) {
+		#music-bottom {margin-bottom: 15%;}
+		}
+
   @media screen and (max-width: 625px) {
-	.music-top {margin-top: 120px;}
+		.music-top {margin-top: 120px;}
 	}
 
-	@media screen and (min-width: 1700px) {
-	#music-bottom {margin-bottom: 15%;}
+	@media screen and (max-width: 430px) {
+		.monthlyheader {width: 85%; margin-left: 7.5%;}
+		.thirteenthheader {width: 85%; margin-left: 7.5%;}
 	}
 
   /* media instructions to resize page as needed (OBSOLETE) */
@@ -623,6 +654,10 @@ img.about {
 	#left {float: none; margin-bottom: 40px;}
 	#body-about {padding-bottom: 20%;}
 	}
+
+@media screen and (max-width: 500px) {
+	.column {width: 85%;}
+}
 
 /* Animation cheat sheet */
 

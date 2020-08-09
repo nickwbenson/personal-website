@@ -226,6 +226,12 @@ height: 300px;
 	width: 100%;
   }
 
+  input[type=button] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+  }
+
   #hideshow {
 	border: none;
 	outline: none;

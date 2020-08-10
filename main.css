@@ -291,6 +291,11 @@ height: 300px;
 	}
   }
 
+  @media screen and (max-width: 500px) {
+	  #about {max-width: 90%;}
+	  #row {width: 90%; padding: 0;}
+  }
+
   /* music page */
 
   #first-div {
@@ -306,7 +311,7 @@ height: 300px;
 }
 
 .music-top {
-	margin-top: 100px;
+	margin-top: 125px;
 }
 
   img.playlist {
@@ -399,8 +404,9 @@ transition: 1s ease;
 		#music-bottom {margin-bottom: 15%;}
 		}
 
-  @media screen and (max-width: 625px) {
-		.music-top {margin-top: 120px;}
+	@media screen and (max-width: 579px) {
+		.monthlyheader {width: 80%; margin-left: 10%;}
+		.thirteenthheader {width: 80%; margin-left: 10%;}
 	}
 
 	@media screen and (max-width: 430px) {

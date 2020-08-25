@@ -18,7 +18,7 @@
     "homepage": "http://github.com/stephband/jquery.event.move",
     "docs": "http://stephband.info/jquery.event.move",
     "devDependencies": {
-        "eslint": "^3.6.1"
+        "eslint": "^7.7.0"
     },
     "scripts": {
         "lint": "eslint js/jquery.event.move.js js/dom.event.move.js"

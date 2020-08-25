@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
             <link rel="stylesheet" href="/main.css">
             <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.css">
+            <link rel="stylesheet" href="/hammer.js">
+            <link rel="stylesheet" href="/jquery.hammer.js-master/jquery.hammer.js">
             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
             <script src="/main.js"></script>
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -128,6 +130,16 @@ box-sizing: border-box;
     $("#about").toggle("display")
     });
     </script>
+
+<script>
+    $('#lightbox').hammer().on("swipe", function (event) {
+                if (event.gesture.direction === 4) {
+                    $('#lightbox a.lb-prev').trigger('click');
+                } else if (event.gesture.direction === 2) {
+                    $('#lightbox a.lb-next').trigger('click');
+                }
+            });
+</script>
 
 </body>
 

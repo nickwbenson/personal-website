@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
             <link rel="stylesheet" href="/main.css">
             <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.css">
-            <link rel="stylesheet" href="/hammer.js">
-            <link rel="stylesheet" href="/jquery.hammer.js-master/jquery.hammer.js">
             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
             <script src="/main.js"></script>
+<link rel="stylesheet" href="/git_modules/jquery.event.move-master/js/jquery.event.move.js">
+<link rel="stylesheet" href="/git_modules/jquery.event.swipe-master/js/jquery.event.swipe.js">
+<link rel="stylesheet" href="/git_modules/jquery-ui-1.12.1.custom/jquery-ui.js">
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -130,16 +131,6 @@ box-sizing: border-box;
     $("#about").toggle("display")
     });
     </script>
-
-<script>
-    $('#lightbox').hammer().on("swipe", function (event) {
-                if (event.gesture.direction === 4) {
-                    $('#lightbox a.lb-prev').trigger('click');
-                } else if (event.gesture.direction === 2) {
-                    $('#lightbox a.lb-next').trigger('click');
-                }
-            });
-</script>
 
 </body>
 

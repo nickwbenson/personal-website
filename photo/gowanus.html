@@ -8,7 +8,11 @@
             <meta name="description" content="gowanus">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
             <link rel="stylesheet" href="/main.css">
-            <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.css">
+
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+            <link rel="stylesheet" href="/fancybox-master/dist/jquery.fancybox.css" />
+            <script src="/fancybox-master/dist/jquery.fancybox.js"></script>
+
             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
             <script src="/main.js"></script> 
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -62,73 +66,65 @@ gowanus community darkroom. the ten photos below are the results: a love letter 
 
 <div style="margin-top: 25px;" id="row">
     <div id="column">
-        <a class="card-image" data-lightbox="gowanus" href="/images/g1.jpg"
+        <a class="card-image" data-fancybox="gallery" href="/images/g1.jpg"
         style="background-image: url(/images/g1small.jpg);" data-image-full="/images/g1.jpg">
         <img src="/images/g1.jpg" style="width:100%">
           </a>
           </div>
           <div id="column">
-            <a class="card-image" data-lightbox="gowanus" href="/images/g2.jpg"
+            <a class="card-image" data-fancybox="gallery" href="/images/g2.jpg"
             style="background-image: url(/images/g2small.jpg);" data-image-full="/images/g2.jpg">
             <img src="/images/g2.jpg" style="width:100%">
               </a>
               </div>
               <div id="column">
-             <a class="card-image" data-lightbox="gowanus" href="/images/g3.jpg"
+             <a class="card-image" data-fancybox="gallery" href="/images/g3.jpg"
              style="background-image: url(/images/g3small.jpg);" data-image-full="/images/g3.jpg">
             <img src="/images/g3.jpg" style="width:100%">
               </a>
              </div>
              <div id="column">
-              <a class="card-image" data-lightbox="gowanus" href="/images/g4.jpg"
+              <a class="card-image" data-fancybox="gallery" href="/images/g4.jpg"
               style="background-image: url(/images/g4small.jpg);" data-image-full="/images/g4.jpg">
               <img src="/images/g4.jpg" style="width:100%">
                </a>
                 </div>
                 <div id="column">
-             <a class="card-image" data-lightbox="gowanus" href="/images/g5.jpg"
+             <a class="card-image" data-fancybox="gallery" href="/images/g5.jpg"
              style="background-image: url(/images/g5small.jpg);" data-image-full="/images/g5.jpg">
             <img src="/images/g5.jpg" style="width:100%">
                  </a>
                  </div>
                  <div id="column">
-                  <a class="card-image" data-lightbox="gowanus" href="/images/g6.jpg"
+                  <a class="card-image" data-fancybox="gallery" href="/images/g6.jpg"
                   style="background-image: url(/images/g6small.jpg);" data-image-full="/images/g6.jpg">
                  <img src="/images/g6.jpg" style="width:100%">
                   </a>
                   </div>
              <div id="column">
-              <a class="card-image" data-lightbox="gowanus" href="/images/g7.jpg"
+              <a class="card-image" data-fancybox="gallery" href="/images/g7.jpg"
              style="background-image: url(/images/g7small.jpg);" data-image-full="/images/g7.jpg">
             <img src="/images/g7.jpg" style="width:100%">
                  </a>
                  </div>
               <div id="column">
-             <a class="card-image" data-lightbox="gowanus" href="/images/g8.jpg"
+             <a class="card-image" data-fancybox="gallery" href="/images/g8.jpg"
              style="background-image: url(/images/g8small.jpg);" data-image-full="/images/g8.jpg">
              <img src="/images/g8.jpg" style="width:100%">
                  </a>
                 </div>
                 <div id="column">
-                    <a class="card-image" data-lightbox="gowanus" href="/images/g9.jpg"
+                    <a class="card-image" data-fancybox="gallery" href="/images/g9.jpg"
                     style="background-image: url(/images/g9small.jpg);" data-image-full="/images/g9.jpg">
                     <img src="/images/g9.jpg" style="width:100%">
                       </a>
                       </div>
                <div id="column">
-                   <a class="card-image" data-lightbox="gowanus" href="/images/g10.jpg"
+                   <a class="card-image" data-fancybox="gallery" href="/images/g10.jpg"
                   style="background-image: url(/images/g10small.jpg);" data-image-full="/images/g10.jpg">
                  <img src="/images/g10.jpg" style="width:100%">
                   </a>
                   </div></div>
-
-<script src="/node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
-
-<script>
-    lightbox.option({
-        'disableScrolling': true,
-    })
-</script>
 
 <script>
 $("#hideshow").on("click",function(){

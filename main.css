@@ -317,6 +317,10 @@ height: 300px;
 	margin-top: 125px;
 }
 
+.playlist {
+	cursor: pointer;
+}
+
   img.playlist {
 	  max-width: 200px;
 	  max-height: 200px;
@@ -374,40 +378,296 @@ transition: 1s ease;
 	  margin-bottom: 10%;
   }
 
- /* flip mechanic from https://webdevtrick.com/css-card-flip-reflection/ */
- 
-  .card {
-	position: relative;
-	color: white;
-	cursor: pointer;
-	transition: 1s ease-in-out;
-	-webkit-transform-style: preserve-3d;
-			transform-style: preserve-3d;
-  }
-  
-  .card:hover {
-	-webkit-transform: rotateY(0.5turn);
-			transform: rotateY(0.5turn);
-  }
-
-  .card .item {
-	position: absolute;
-	top: 0;
-	left: 0;
+  #sept20 {
+	position: fixed;
+	display: none;
 	width: 100%;
 	height: 100%;
-	transition: 1s ease-in-out;
-	-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
   }
 
-  .card .item img {
-	-o-object-fit: cover;
-	   object-fit: cover;
+  #aug20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
   }
 
-  .card .back-side {
-	-webkit-transform: rotateY(0.5turn);
-			transform: rotateY(0.5turn);
+  #july20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #june20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #may20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #april20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #march20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #feb20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #jan20 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #dec19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #nov19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #oct19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #sept19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #july19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #june19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #may19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #april19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #march19 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	align-items: center; 
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  #player {
+	  position: absolute;
   }
 
   /* media instructions */

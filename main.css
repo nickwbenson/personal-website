@@ -317,6 +317,20 @@ height: 300px;
 	margin-top: 125px;
 }
 
+#row-music {
+	display: -ms-flexbox; 
+	display: flex;
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap;
+	width: 50%;
+  }
+  
+  #column-music {
+	-ms-flex: 50%;
+	flex: 50%;
+	max-width: 50%;
+  }
+
 .playlist {
 	cursor: pointer;
 }
